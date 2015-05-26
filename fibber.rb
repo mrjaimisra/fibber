@@ -13,7 +13,8 @@ class Fibber
       if num > 1
         fibs << fibs[-1] + fibs[-2]
       else
-        fibs << 1 end
+        fibs << 1
+      end
     end
 
   end
@@ -56,7 +57,7 @@ end
 # the code to generate the fibonacci sequence for an arbitrary range of numbers, beginning with 0:
 
 fibonacci_sequence = Fibber.new
-fibonacci_sequence.fib(0)
+fibonacci_sequence.fib(-1)
 
 # the code for outputting the sequence in a variety of forms:
 
