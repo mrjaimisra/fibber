@@ -9,7 +9,7 @@ class Fibber
   attr_accessor :quantity
 
   def fib(quantity)
-    @sequence = (0..quantity).inject([0]) do |fibs, num|
+    @sequence = (1..quantity).inject([0]) do |fibs, num|
       if num > 1
         fibs << fibs[-1] + fibs[-2]
       else
@@ -56,7 +56,7 @@ end
 # the code to generate the fibonacci sequence for an arbitrary range of numbers, beginning with 0:
 
 fibonacci_sequence = Fibber.new
-fibonacci_sequence.fib(15)
+fibonacci_sequence.fib(0)
 
 # the code for outputting the sequence in a variety of forms:
 
