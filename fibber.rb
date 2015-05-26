@@ -9,7 +9,7 @@ class Fibber
   attr_accessor :quantity
 
   def fib(quantity)
-    @sequence = (0..quantity).inject([]) do |fibs, num|
+    @sequence = (0..quantity).inject([0]) do |fibs, num|
       if num > 1
         fibs << fibs[-1] + fibs[-2]
       else
